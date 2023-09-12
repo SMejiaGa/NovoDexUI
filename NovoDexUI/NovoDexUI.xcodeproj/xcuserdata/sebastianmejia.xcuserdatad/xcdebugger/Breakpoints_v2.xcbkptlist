@@ -49,6 +49,21 @@
                   endingLineNumber = "42"
                   offsetFromSymbolStart = "1032">
                </Location>
+               <Location
+                  uuid = "3AF2D3B6-87EA-419A-AE27-D3A19F2BA3DD - 40a87c4d39260a3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NovoDexUI.PokemonModel, Swift.Error&gt;) -&gt; () in NovoDexUI.PokemonPresenter.fetchPokemonModel(id: Swift.Int) -&gt; ()"
+                  moduleName = "NovoDexUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sebastianmejia/Documents/GitHub/NovoDexUI/NovoDexUI/NovoDexUI/Presenter/PokemonPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1136">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -96,6 +111,21 @@
                   startingLineNumber = "54"
                   endingLineNumber = "54"
                   offsetFromSymbolStart = "1004">
+               </Location>
+               <Location
+                  uuid = "F7BB2F32-FAA3-4116-A4CA-748EF42DA5CA - d48ea9ed081e172f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NovoDexUI.PokemonFormModel, Swift.Error&gt;) -&gt; () in NovoDexUI.PokemonPresenter.fetchPokemonForm(id: Swift.Int) -&gt; ()"
+                  moduleName = "NovoDexUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sebastianmejia/Documents/GitHub/NovoDexUI/NovoDexUI/NovoDexUI/Presenter/PokemonPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "1108">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -160,6 +190,21 @@
                   endingLineNumber = "65"
                   offsetFromSymbolStart = "1592">
                </Location>
+               <Location
+                  uuid = "B6E552E4-84A6-4274-A69D-1E5E75414BE3 - e71442dee3cf9243"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NovoDexUI.PokemonGenerationModel, Swift.Error&gt;) -&gt; () in NovoDexUI.PokemonPresenter.fetchPokemonGeneration(id: Swift.Int) -&gt; ()"
+                  moduleName = "NovoDexUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sebastianmejia/Documents/GitHub/NovoDexUI/NovoDexUI/NovoDexUI/Presenter/PokemonPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "1592">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -189,8 +234,8 @@
             filePath = "NovoDexUI/Presenter/PokemondetailPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "fetchPokemonModel(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -205,8 +250,8 @@
             filePath = "NovoDexUI/Presenter/PokemondetailPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "fetchPokemonForm(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -221,8 +266,8 @@
             filePath = "NovoDexUI/Presenter/PokemondetailPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "fetchPokemonGeneration(id:)"
             landmarkType = "7">
             <Locations>

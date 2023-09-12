@@ -18,8 +18,12 @@
 		0B4CA8732AAE7D970012C1B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4CA8722AAE7D970012C1B1 /* Constants.swift */; };
 		0B4CA8772AAED5790012C1B1 /* Generations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4CA8762AAED5790012C1B1 /* Generations.swift */; };
 		0B4CA8792AAEEBD80012C1B1 /* PokemonListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4CA8782AAEEBD80012C1B1 /* PokemonListModel.swift */; };
-		0B649FDA2AB0090E00E19EB3 /* PokemondetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B649FD92AB0090E00E19EB3 /* PokemondetailPresenter.swift */; };
+		0B649FDA2AB0090E00E19EB3 /* PokemonDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B649FD92AB0090E00E19EB3 /* PokemonDetailPresenter.swift */; };
 		0B649FDC2AB00DB100E19EB3 /* PokemonDetailStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B649FDB2AB00DB100E19EB3 /* PokemonDetailStore.swift */; };
+		0B649FDE2AB04D8300E19EB3 /* PokemonPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B649FDD2AB04D8300E19EB3 /* PokemonPresenterTests.swift */; };
+		0B649FE02AB04DC600E19EB3 /* PokemonDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B649FDF2AB04DC600E19EB3 /* PokemonDetailPresenterTests.swift */; };
+		0B649FE52AB056A400E19EB3 /* PokemonHollow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B649FE22AB054BE00E19EB3 /* PokemonHollow.ttf */; };
+		0B649FE62AB056A700E19EB3 /* PokemonSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B649FE32AB054BE00E19EB3 /* PokemonSolid.ttf */; };
 		0B7212032AAFC63E00656498 /* PokemonDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7212022AAFC63E00656498 /* PokemonDetails.swift */; };
 		0BB7033C2AAD362E008BE351 /* NovoDexUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB7033B2AAD362E008BE351 /* NovoDexUIApp.swift */; };
 		0BB7033E2AAD362E008BE351 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB7033D2AAD362E008BE351 /* ContentView.swift */; };
@@ -64,8 +68,13 @@
 		0B4CA8722AAE7D970012C1B1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0B4CA8762AAED5790012C1B1 /* Generations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generations.swift; sourceTree = "<group>"; };
 		0B4CA8782AAEEBD80012C1B1 /* PokemonListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListModel.swift; sourceTree = "<group>"; };
-		0B649FD92AB0090E00E19EB3 /* PokemondetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemondetailPresenter.swift; sourceTree = "<group>"; };
+		0B649FD92AB0090E00E19EB3 /* PokemonDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailPresenter.swift; sourceTree = "<group>"; };
 		0B649FDB2AB00DB100E19EB3 /* PokemonDetailStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailStore.swift; sourceTree = "<group>"; };
+		0B649FDD2AB04D8300E19EB3 /* PokemonPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonPresenterTests.swift; sourceTree = "<group>"; };
+		0B649FDF2AB04DC600E19EB3 /* PokemonDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailPresenterTests.swift; sourceTree = "<group>"; };
+		0B649FE22AB054BE00E19EB3 /* PokemonHollow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonHollow.ttf; sourceTree = "<group>"; };
+		0B649FE32AB054BE00E19EB3 /* PokemonSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonSolid.ttf; sourceTree = "<group>"; };
+		0B649FE42AB0555A00E19EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0B7212022AAFC63E00656498 /* PokemonDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetails.swift; sourceTree = "<group>"; };
 		0BB703382AAD362E008BE351 /* NovoDexUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NovoDexUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BB7033B2AAD362E008BE351 /* NovoDexUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovoDexUIApp.swift; sourceTree = "<group>"; };
@@ -127,7 +136,7 @@
 			children = (
 				0B4CA8522AAE25870012C1B1 /* PresenterProtocols */,
 				0BB703742AAD368C008BE351 /* PokemonPresenter.swift */,
-				0B649FD92AB0090E00E19EB3 /* PokemondetailPresenter.swift */,
+				0B649FD92AB0090E00E19EB3 /* PokemonDetailPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -143,6 +152,7 @@
 		0B4CA8512AAE24670012C1B1 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				0B649FE12AB054B600E19EB3 /* Fonts */,
 				0BB7033F2AAD362F008BE351 /* Assets.xcassets */,
 				0B4CA8722AAE7D970012C1B1 /* Constants.swift */,
 				0B4CA8762AAED5790012C1B1 /* Generations.swift */,
@@ -170,6 +180,15 @@
 			path = APIModels;
 			sourceTree = "<group>";
 		};
+		0B649FE12AB054B600E19EB3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0B649FE22AB054BE00E19EB3 /* PokemonHollow.ttf */,
+				0B649FE32AB054BE00E19EB3 /* PokemonSolid.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		0BB7032F2AAD362E008BE351 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +211,7 @@
 		0BB7033A2AAD362E008BE351 /* NovoDexUI */ = {
 			isa = PBXGroup;
 			children = (
+				0B649FE42AB0555A00E19EB3 /* Info.plist */,
 				0BB703412AAD362F008BE351 /* Preview Content */,
 				0B4CA8512AAE24670012C1B1 /* Commons */,
 				0B4CA8502AAE23AF0012C1B1 /* Protocols */,
@@ -218,6 +238,8 @@
 			isa = PBXGroup;
 			children = (
 				0BB7034C2AAD362F008BE351 /* NovoDexUITests.swift */,
+				0B649FDD2AB04D8300E19EB3 /* PokemonPresenterTests.swift */,
+				0B649FDF2AB04DC600E19EB3 /* PokemonDetailPresenterTests.swift */,
 			);
 			path = NovoDexUITests;
 			sourceTree = "<group>";
@@ -336,8 +358,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B649FE62AB056A700E19EB3 /* PokemonSolid.ttf in Resources */,
 				0BB703432AAD362F008BE351 /* Preview Assets.xcassets in Resources */,
 				0BB703402AAD362F008BE351 /* Assets.xcassets in Resources */,
+				0B649FE52AB056A400E19EB3 /* PokemonHollow.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +389,7 @@
 				0B4CA8582AAE264D0012C1B1 /* EmptyStateView.swift in Sources */,
 				0B4CA8602AAE66D40012C1B1 /* PokemonGenerationModel.swift in Sources */,
 				0BB7037B2AAD3B42008BE351 /* PokemonPresenterDelegateProtocol.swift in Sources */,
-				0B649FDA2AB0090E00E19EB3 /* PokemondetailPresenter.swift in Sources */,
+				0B649FDA2AB0090E00E19EB3 /* PokemonDetailPresenter.swift in Sources */,
 				0BB7033E2AAD362E008BE351 /* ContentView.swift in Sources */,
 				0B4CA8562AAE26440012C1B1 /* ErrorView.swift in Sources */,
 				0B4CA84D2AAE22110012C1B1 /* PokemonDisplayView.swift in Sources */,
@@ -392,6 +416,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B649FDE2AB04D8300E19EB3 /* PokemonPresenterTests.swift in Sources */,
+				0B649FE02AB04DC600E19EB3 /* PokemonDetailPresenterTests.swift in Sources */,
 				0BB7034D2AAD362F008BE351 /* NovoDexUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,6 +569,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NovoDexUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NovoDexUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -572,6 +599,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NovoDexUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NovoDexUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
