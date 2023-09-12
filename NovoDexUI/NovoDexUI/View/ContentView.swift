@@ -17,6 +17,8 @@ struct ContentView: View {
       }
 
       var body: some View {
+          Text(Constants.APP_NAME).font(Font.custom("PokemonSolid", size: 25))
+          Text(Constants.DEVELOPER).font(Font.custom("PokemonHollow", size: 15))
         NavigationView {
           switch store.state {
           case .loaded(let pokemons):
@@ -31,7 +33,6 @@ struct ContentView: View {
               ErrorView(message: message)
           }
         }
-        .navigationTitle("NovoDexUI")
         .onAppear {
             presenter.fetchPokemonList()
         }

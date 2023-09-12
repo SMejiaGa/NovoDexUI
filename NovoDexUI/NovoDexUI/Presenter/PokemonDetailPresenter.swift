@@ -4,7 +4,6 @@
 //
 //  Created by Sebastian Mejía on 9/09/23.
 //
-// https://medium.com/movile-tech/swiftui-and-architectures-mvp-c816ff7fbadd
 import Foundation
 
 protocol PokemonDetailPresenterProtocol: AnyObject {
@@ -21,7 +20,7 @@ protocol PokemonDetailPresenterDelegateProtocol: AnyObject {
 
 class PokemonDetailPresenter: PokemonDetailPresenterProtocol {
     private var service: PokemonServiceProtocol
-    private weak var delegate: (PokemonDetailPresenterDelegateProtocol)?
+    weak var delegate: (PokemonDetailPresenterDelegateProtocol)?
     private var pokemonModelData: PokemonModel?
     private var pokemonFormData: PokemonFormModel?
     private var pokemonGenerationData: PokemonGenerationModel?

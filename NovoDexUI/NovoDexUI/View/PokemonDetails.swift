@@ -30,6 +30,7 @@ struct PokemonDetails: View {
                 ScrollView {
                     Text("\(model.name.uppercased())")
                         .font(.title)
+                    
                     TabView {
                         ForEach(form.sprites.getImageUrls(), id: \.self) { imageUrl in
                             AsyncImage(url: imageUrl) { phase in
@@ -56,38 +57,35 @@ struct PokemonDetails: View {
                     .frame(minWidth: 200, idealWidth: 350, maxWidth: 400, minHeight: 200, idealHeight: 350, maxHeight: 400, alignment: .center)
                     
                     VStack {
-                        Section {
-                            Text("Types:")
-                                .font(.largeTitle)
+                        DisclosureGroup("Types:") {
                             HStack {
                                 ForEach(model.types, id: \.type.name) { type in
                                     Text(type.type.name)
                                         .font(.title3)
                                 }
                             }
-                        }
-                        Spacer()
+                        }.padding(10)
                         Divider()
-                        Section {
-                            Text("Abilities:")
+                        
+                        DisclosureGroup("Abilities:") {
                             ForEach(model.abilities, id: \.ability.name) { ability in
                                 Text(ability.ability.name)
                             }
-                        }
+                        }.padding(10)
                         Divider()
-                        Text("Stats:")
-                        ForEach(model.stats, id: \.stat.name) { stat in
-                            Text("\(stat.stat.name): \(stat.baseStat)")
-                        }
-                        Spacer()
+                        
+                        DisclosureGroup("Stats:") {
+                            ForEach(model.stats, id: \.stat.name) { stat in
+                                Text("\(stat.stat.name): \(stat.baseStat)")
+                            }
+                        }.padding(10)
                         Divider()
-                        Section {
-                            Text("Posible Moves:")
+                        
+                        DisclosureGroup("Possible Moves:") {
                             ForEach(model.moves, id: \.move.name) { move in
                                 Text(move.move.name)
                             }
-                            
-                        }
+                        }.padding(10)
                     }
                 }
             case .loading:
@@ -100,4 +98,5 @@ struct PokemonDetails: View {
             pokemonPresenter.fetchPokemonGeneration(id: pokemonId)
         }
     }
+
 }

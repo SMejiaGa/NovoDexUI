@@ -11,6 +11,9 @@ struct PokemonDisplayView: View {
     
     var pokemonData: PokemonListModel
     var pokemonDetailStore = PokemonDetailStore()
+    @State private var searchText = ""
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+
     init(pokemonData: PokemonListModel) {
         self.pokemonData = pokemonData
     }
@@ -29,17 +32,36 @@ struct PokemonDisplayView: View {
     }
     
     var body: some View {
+        if horizontalSizeClass == .compact {
+            NavigationView {
+                List(searchResults) { pokemon in
+                    
+                    ZStack {
+                        NavigationLink(destination: PokemonDetails(pokemonId: getpokemonIdFromUrl(pokemon.url),store: pokemonDetailStore)) {
+                            Text(pokemon.name)
+                        }
+                    }
+                }
+            }.searchable(text: $searchText, prompt: "Search for your favorite Pokemon!")
+        } else {
         NavigationView {
-            List(pokemonData.results) { pokemon in
+            List(searchResults) { pokemon in
                 ZStack {
                     NavigationLink(destination: PokemonDetails(pokemonId: getpokemonIdFromUrl(pokemon.url),store: pokemonDetailStore)) {
                         Text(pokemon.name)
                     }
                 }
-            }
+            }.searchable(text: $searchText, prompt: "Search for your favorite Pokemon!")
         }
     }
 }
-
-
-
+    
+    var searchResults: [ResultData] {
+            if searchText.isEmpty {
+                return pokemonData.results
+            } else {
+                return pokemonData.results.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
+                
+            }
+        }
+}
