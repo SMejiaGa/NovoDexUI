@@ -18,7 +18,7 @@ struct LoadingView: View {
         Button {
             presenter.fetchPokemonList()
         } label: {
-            Text("RECARGA LA TABLA EN TEORIA")
+            Text("Reload data")
         }
     }
 }

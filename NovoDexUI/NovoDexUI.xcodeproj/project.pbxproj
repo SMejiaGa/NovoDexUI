@@ -189,6 +189,23 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		0B649FE72AB05ECA00E19EB3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0B4CA8592AAE449D0012C1B1 /* PokemonService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0B649FE82AB05EDB00E19EB3 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				0B4CA84A2AAE19C60012C1B1 /* PokemonStore.swift */,
+				0B649FDB2AB00DB100E19EB3 /* PokemonDetailStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		0BB7032F2AAD362E008BE351 = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +228,8 @@
 		0BB7033A2AAD362E008BE351 /* NovoDexUI */ = {
 			isa = PBXGroup;
 			children = (
+				0B649FE82AB05EDB00E19EB3 /* Store */,
+				0B649FE72AB05ECA00E19EB3 /* Services */,
 				0B649FE42AB0555A00E19EB3 /* Info.plist */,
 				0BB703412AAD362F008BE351 /* Preview Content */,
 				0B4CA8512AAE24670012C1B1 /* Commons */,
@@ -219,9 +238,6 @@
 				0B4CA84E2AAE23710012C1B1 /* View */,
 				0BB703652AAD363F008BE351 /* Model */,
 				0BB7033B2AAD362E008BE351 /* NovoDexUIApp.swift */,
-				0B4CA84A2AAE19C60012C1B1 /* PokemonStore.swift */,
-				0B4CA8592AAE449D0012C1B1 /* PokemonService.swift */,
-				0B649FDB2AB00DB100E19EB3 /* PokemonDetailStore.swift */,
 			);
 			path = NovoDexUI;
 			sourceTree = "<group>";

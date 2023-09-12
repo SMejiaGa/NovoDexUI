@@ -8,10 +8,10 @@
 import Foundation
 
 class PokemonService: PokemonServiceProtocol {
+    let setAndLimit: (Int,Int) = (0,151)
 
-    
     func fetchPokemonList(completion: @escaping ((Result<PokemonListModel, Error>) -> Void)) {
-        guard let url = URL(string: "\(Constants.DEFAULT_ENDPOINT)/pokemon?offset=0&limit=\(151)") else { return }
+        guard let url = URL(string: "\(Constants.DEFAULT_ENDPOINT)\(Constants.LIST_ENDPOINT_COMPLEMENT_OFFSET)\(setAndLimit.0)\(Constants.LIST_ENDPOINT_COMPLEMENT_LIMIT)\(setAndLimit.1)") else { return }
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data else {
                 completion(.failure(error!))
@@ -32,7 +32,7 @@ class PokemonService: PokemonServiceProtocol {
     }
     
     func fetchPokemonModel(id: Int,completion: @escaping ((Result<PokemonModel, Error>) -> Void)) {
-        guard let url = URL(string: "\(Constants.DEFAULT_ENDPOINT)/pokemon/\(id)") else { return }
+        guard let url = URL(string: "\(Constants.DEFAULT_ENDPOINT)\(Constants.MODEL_ENDPOINT_COMPLEMENT)\(id)") else { return }
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data else {
                 completion(.failure(error!))
@@ -54,7 +54,7 @@ class PokemonService: PokemonServiceProtocol {
     
     
     func fetchPokemonForm(id: Int, completion: @escaping ((Result<PokemonFormModel, Error>) -> Void)) {
-        guard let url = URL(string: "\(Constants.DEFAULT_ENDPOINT)/pokemon-form/\(id)") else { return }
+        guard let url = URL(string: "\(Constants.DEFAULT_ENDPOINT)\(Constants.FORM_ENDPOINT_COMPLEMENT)\(id)") else { return }
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data else {
                 completion(.failure(error!))
@@ -76,7 +76,7 @@ class PokemonService: PokemonServiceProtocol {
     
     
     func fetchPokemonGeneration(id: Int, completion: @escaping ((Result<PokemonGenerationModel, Error>) -> Void)) {
-        guard let url = URL(string: "\(Constants.DEFAULT_ENDPOINT)/pokemon-species/\(id)")  else { return }
+        guard let url = URL(string: "\(Constants.DEFAULT_ENDPOINT)\(Constants.GENERATION_ENDPOINT_COMPLEMENT)\(id)")  else { return }
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data else {
                 completion(.failure(error!))
