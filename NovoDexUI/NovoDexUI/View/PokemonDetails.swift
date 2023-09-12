@@ -64,28 +64,28 @@ struct PokemonDetails: View {
                                         .font(.title3)
                                 }
                             }
-                        }
+                        }.padding(10)
                         Divider()
                         
                         DisclosureGroup("Abilities:") {
                             ForEach(model.abilities, id: \.ability.name) { ability in
                                 Text(ability.ability.name)
                             }
-                        }
+                        }.padding(10)
                         Divider()
                         
                         DisclosureGroup("Stats:") {
                             ForEach(model.stats, id: \.stat.name) { stat in
                                 Text("\(stat.stat.name): \(stat.baseStat)")
                             }
-                        }
+                        }.padding(10)
                         Divider()
                         
                         DisclosureGroup("Possible Moves:") {
                             ForEach(model.moves, id: \.move.name) { move in
                                 Text(move.move.name)
                             }
-                        }
+                        }.padding(10)
                     }
                 }
             case .loading:
