@@ -27,7 +27,7 @@
 # Developer Notes
 
  I consider that the MVP Architecture was the most apropiate for this app because the logic behind the app is not that complex, its almost a copy an paste of behaviors, the data comes from just one side and the navigation requirements are easy to implement in almost any case.
- The app is builded in SwiftUI because most of the initial projects in UIKit tend to drain more time just modeling the navigations, the requirements for segues, storyboards or XIBs makes the app to take longer for be build in such a shor time (2 days)
+ The app is builded in SwiftUI because most of the initial projects in UIKit tend to drain more time just modeling the navigations, the requirements for segues, storyboards or XIBs makes the app to take longer for be build 
 
  # ScreenShots
 
