@@ -8,7 +8,9 @@
 import Foundation
 
 struct Constants {
-    // MARK: - ENDPOINTS
     static let DEFAULT_ENDPOINT = "https://pokeapi.co/api/v2"
     static let GENERATION = "generation-i"
+    static let APP_NAME = "NovoDexUI"
+    static let DEVELOPER = "Sebastian Mejia"
+    static let SEARCH_TEXT = "Search for your favorite Pokemon!"
 }
